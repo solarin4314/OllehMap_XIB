@@ -1,0 +1,41 @@
+//
+// Prefix header for all source files of the 'OllehMap' target in the 'OllehMap' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+// 릴리즈 상태에서는 NSLog 동작하지 않도록.. 성능저하문제??
+#ifdef DEBUG
+#define NSLogSepString "=============================="
+#define NSLog( s, ... ) NSLog(@"\n%s\n[MethodName] : %s\n[LogLine]: %d\n%s\n[LogMessage]\n%@\n%s\n\n", NSLogSepString,__FUNCTION__, __LINE__, NSLogSepString, [NSString stringWithFormat:(s), ##__VA_ARGS__], NSLogSepString)
+#else
+#define NSLog( s, ... )
+#endif
+
+// 네비버튼 아래부터 시작
+#define NaviStartY  37
+#define GeneralStartY 0
+
+// 사각영역 정수형으로 정제
+#define CGRectMakeInteger(a,b,c,d) CGRectMake((int)a,(int)b,(int)c,(int)d)
+
+// 비정상 종료 메세지 처리
+#define USE_EXCEPTION_CALLBACK_X
+
+// iPhone or iPad
+#define OM_IsIPHONE ([[UIScreen mainScreen] bounds].size.width == 320)
+#define OM_IsIPAD ([[UIScreen mainScreen] bounds].size.width == 768)
+#define OM_IsLongDisplay ([[UIScreen mainScreen] bounds].size.height > 480)
+
+// iPhone 5 용 이미지 처리
+#define OM_ImageName(regular, longScreen) ( !OM_IsLongDisplay ? regular : longScreen)
+#define OM_ImageName2(regular) ( !OM_IsLongDisplay ? regular : [NSString stringWithFormat:@"%@-568h", regular])

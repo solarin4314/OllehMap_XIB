@@ -1,0 +1,118 @@
+/* 
+ Localizable.strings
+ OllehMap
+ 
+ Created by Changgeun Jeon on 12. 4. 18..
+ Copyright (c) 2012년 __MyCompanyName__. All rights reserved.
+ */
+
+/*
+ NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
+ NSArray* languages = [defs objectForKeyGC:@"AppleLanguages"];
+ NSString* preferredLang = [languages objectAtIndexGC:0];
+ if([preferredLang isEqualToString:@"ko"])
+ */
+
+// ======================
+// ___ 시작
+"SampleText" = "테스트문자열";
+// ___ 끝
+// **************************************
+
+// ======================
+// 타이틀 라벨
+"Title_OllehMap_SearchResultMap" = "지도보기";
+"Title_OllehMap_VoiceSearch" = "음성검색";
+// 타이틀 라벨 끝
+// **************************************
+
+// ======================
+// 본문 라벨 시작
+"Body_InitSearchText" = "장소,주소,버스,지하철,전화번호 입력";
+"Body_SR_AutoMyLoc_Start" = "현재 위치";
+"Body_SR_Require_Start" = "출발지 선택";
+"Body_SR_Require_Visit" = "경유지 선택";
+"Body_SR_Require_Dest" = "도착지 선택";
+"Body_SRRM_RouteSelector_Title" = "경로 옵션";
+"Body_SRRM_RouteSelector_RealTime" = "실시간 빠른길";
+"Body_SRRM_RouteSelector_FreePass" = "무료도로";
+"Body_SRRM_RouteSelector_ShortDistance" = "최단거리";
+"Body_SRRM_RouteSelector_HighWay" = "고속(화)도로";
+"Body_Search_Contact_Empty" = "등록된 연락처가 없습니다.";
+"Body_Search_Favorite_Empty" = "저장된 목록이 없습니다.";
+"Body_VoiceSearch_Request" = "장소, 지하철역, 정류장을 말해주세요.";
+"Body_VoiceSearch_Recognizing" = "음성을 분석중입니다.";
+"Body_VoiceSearch_Searching" = "검색중입니다.";
+"Body_VoiceSearch_Alert" = "하단의 마이크를 가리지 않고 평소처럼 자연스럽게 말해주세요.";
+"Body_VoiceSearch_OtherKeyword_Question" = " 외 다른 검색어로 찾기를 원하세요?";
+"Body_AutoUpdate_Processing" = "DB 업데이트 중입니다.";
+"Body_AutoUpdate_Sucess" = "DB 업데이트가 완료됐습니다.";
+"Body_AutoUpdate_Failed" = "DB 업데이트를 실패했습니다.";
+// 본문 라벨 끝
+// **************************************
+
+// ======================
+// 메세지 시작
+"Msg_SearchFailed" = "검색결과가 없습니다.";
+"Msg_SearchFailed_InvalidAddress" = "정확한 주소가 아닙니다.";
+"Msg_SearchFailedWithException" = "네트워크 오류로 인해 중단되었습니다.\n잠시후 이용해주세요.";
+"Msg_SearchFailedWithExceptionParser" = "정보가 없습니다.";
+"Msg_SearchFailedWithExceptionOverlay" = "일시적인 문제로 POI 정보를 구성하지 못했습니다. 잠시후 이용해주세요.";
+"Msg_SearchFailedWithRetry" = "네트워크 연결이 원활하지 않습니다.\n다시 시도하시겠습니까?";
+"Msg_SearchFailedWithTimeOut" = "네트워크 연결을 확인해 주시기 바랍니다.";
+"Msg_SearchFailed_NonReversGeocoding" = "주소 정보가 없는 지역입니다.";
+"Msg_LocationServiceFailed" = "현재 위치를 확인 할 수 없습니다.\n현재위치를 사용 하시려면 설정에서 위치서비스 기능을 켜주십시오.";
+"Msg_SearchRoutePublic_NotSupportVisit" = "대중교통은 경유지를 지원하지 않습니다.";
+"Msg_POI_DetailView_NothingInfo" = "상세정보가 존재하지 않습니다.";
+"Msg_VoiceSearch_Controller_SessionTimeout" = "오랫동안 검색어를 말하지 않아 음성 검색 기능을 종료합니다.";
+"Msg_VoiceSearch_Controller_FailedRecognize" = "소음이 많거나 목소리가 너무 작습니다. 조용한 곳에서 또는 큰 소리로 다시 시도해 주세요.";
+"Msg_VoiceSearch_Controller_Failure" = "음성 인식 기능 실행에 실패하였습니다.";
+"Msg_VoiceSearch_Controller_ServerConnectCannot" = "음성 검색 서버에 접속하지 못했습니다.";
+"Msg_Search_Favorite_AddSuccess" = "즐겨찾기 목록에 추가되었습니다.";
+"Msg_Search_Favorite_AddFailed_ExistsItem" = "동일한 즐겨찾기가 목록에 존재합니다.";
+"Msg_Search_Favorite_AddFailed_DataError" = "데이터 오류로 인해 즐겨찾기 추가에 실패했습니다.";
+"Msg_Navigation_Push_Failed_BusStationLineOverMax" = "버스 정류장, 노선정보간 이동이 10회로 제한되어 있습니다.";
+"Msg_SearchRoute_DuplicatedStartDest" = "출발지와 도착지의 장소가 동일합니다.";
+"Msg_SearchRoute_DuplicatedStartVisit" = "출발지와 경유지의 장소가 동일합니다.";
+"Msg_SearchRoute_DuplicatedVisitDest" = "경유지와 도착지의 장소가 동일합니다.";
+"Msg_SearchRoute_DuplicatedStartVisitDest" = "출발지, 경유지, 도착지의 장소가 동일합니다.";
+// 위치공유
+"Msg_ShortURL_NotResponse" = "단축URL을 가져오는데 실패했습니다";
+// 콜링크
+"Msg_FreeCall_NoInput" = "전화번호를 입력해 주세요.";
+"Msg_FreeCall_ErrorInput" = "정확한 전화번호를 입력해 주세요.";
+"Msg_FreeCall_SendOK" = "무료통화 요청이 완료되었습니다.\n잠시 후 전화를 받아주세요.";
+"Msg_FreeCall_SendError_second" = "현재 무료통화를 연결 할 수 없습니다.\n일반 통화로 연결 하시겠습니까?";
+"Msg_FreeCall_SendError" = "입력하신 전화번호를 확인해주세요!\n전화번호는 숫자만 입력 가능합니다.";
+// 문자설정
+"Msg_Message_NoAccount" = "Message를 보낼 수 없습니다.";
+// 메일설정
+"Msg_Mail_NoAccount" = "아이폰 메일 설정을 확인하시기 바랍니다.";
+// 위치공유
+"Msg_Share_Copy" = "위치정보를 복사하였습니다.\n메시지를 보내실 때 붙여넣어 사용하세요.";
+"Msg_NotSetup_navi" = "올레 navi를 설치 또는 업데이트 하신 후에 실행해 주십시오";
+"Msg_NotSetup_ollehTalk" = "올레톡을 설치 또는 업데이트 하신 후에 실행해 주십시오";
+"Msg_NotSetup_kakaoTalk" = "카카오톡 설치 또는 업데이트 하신 후에 실행해 주십시오";
+"Msg_Share_TwitterOk" = "트위터에 공유되었습니다";
+"Msg_Share_TwitterFail" = "트위터에 공유하기가 실패하였습니다";
+"Msg_Share_FaceBookOk" = "페이스북에 공유되었습니다";
+"Msg_Share_FaceBookFail" = "페이스북에 공유하기가 실패하였습니다";
+// 지하철상세
+"Msg_Subway_NotNextStation" = "다음역이 없습니다";
+"Msg_Subway_NotTransfer" = "환승가능한 역이 없습니다";
+// 버스번호상세
+"Msg_BusNumber_NotSTID" = "해당 정류장을 찾을 수 없습니다";
+"Msg_BusNumber_NotDrawBusLine" = "버스노선을 그릴 수 없습니다";
+// 최근검색
+"Msg_Popup_ClickBusNumber" = "버스노선은 출발/도착/경유지로 지정할 수 없습니다";
+"Msg_Popup_ClickRoute" = "길찾기 경로는 출발/도착/경유지로 지정할 수 없습니다";
+// 설정-고객문의불만
+"Msg_customerComplain_NotBtnCheck" = "답변받으실 방법을 선택하여 주세요";
+"Msg_customerComplain_NotTwitterId" = "트위터 아이디를 입력해주세요";
+"Msg_customerComplain_NotEmailId" = "올바른 이메일 아이디를 입력해주세요";
+"Msg_customerComplain_NotPrivateCheck" = "개인정보제공 동의가 필요합니다";
+"Msg_customerComplain_NotContent" = "내용을 입력해주세요";
+"Msg_customerComplain_sendOK" = "등록되었습니다.\n빠른 시간내 답변을 드리겠습니다";
+"Msg_customerComplain_txtViewPlaceHolder" = "사용중 문의 또는 불만사항을 적어주시면 선택하신 이메일, 트위터를 통해 답변을 드리겠습니다.\n(운영시간:평일 09:00~18:00)";
+// 메세지 끝
+// **************************************
